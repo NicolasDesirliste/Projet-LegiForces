@@ -1,0 +1,15 @@
+-rootPath
+C:/Users/33769/Documents/LegiForces
+-cmake-output
+-output-file
+C:/Users/33769/Documents/LegiForces/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qt/qml_imports/appLegiForces_build.cmake
+-importPath
+C:/Users/33769/Documents/LegiForces/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/LegiForces
+-importPath
+C:/Users/33769/Documents/LegiForces/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.9.2/mingw_64/qml
+-qrcFiles
+C:/Users/33769/Documents/LegiForces/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qt/rcc/qmake_LegiForces.qrc
+C:/Users/33769/Documents/LegiForces/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qt/rcc/appLegiForces_raw_qml_0.qrc
+C:/Users/33769/Documents/LegiForces/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qt/rcc/appLegiForces_raw_qml_0_extra_qmldirs.qrc

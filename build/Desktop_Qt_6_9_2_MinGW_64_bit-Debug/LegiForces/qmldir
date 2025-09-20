@@ -1,0 +1,19 @@
+module LegiForces
+typeinfo appLegiForces.qmltypes
+prefer :/qt/qml/LegiForces/
+Main 1.0 Main.qml
+LegiHeader 1.0 components/LegiHeader.qml
+LegiFooter 1.0 components/LegiFooter.qml
+LegiSidebar 1.0 components/LegiSidebar.qml
+LegiNavButton 1.0 components/LegiNavButton.qml
+LegiTooltip 1.0 components/LegiTooltip.qml
+LegiRightSidebar 1.0 components/LegiRightSidebar.qml
+LegiMainContent 1.0 components/LegiMainContent.qml
+LegiSocialButton 1.0 components/LegiSocialButton.qml
+LegiNewsSidebar 1.0 components/LegiNewsSidebar.qml
+Dashboard 1.0 pages/Dashboard.qml
+Login 1.0 pages/Login.qml
+CourtCases 1.0 pages/CourtCases.qml
+Users 1.0 pages/Users.qml
+depends QtQuick
+

@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="/qt/qml/LegiForces/">
+    <file alias="Main.qml">C:/Users/33769/Documents/LegiForces/Main.qml</file>
+    <file alias="components/LegiHeader.qml">C:/Users/33769/Documents/LegiForces/components/LegiHeader.qml</file>
+    <file alias="components/LegiFooter.qml">C:/Users/33769/Documents/LegiForces/components/LegiFooter.qml</file>
+    <file alias="components/LegiSidebar.qml">C:/Users/33769/Documents/LegiForces/components/LegiSidebar.qml</file>
+    <file alias="components/LegiNavButton.qml">C:/Users/33769/Documents/LegiForces/components/LegiNavButton.qml</file>
+    <file alias="components/LegiTooltip.qml">C:/Users/33769/Documents/LegiForces/components/LegiTooltip.qml</file>
+    <file alias="components/LegiRightSidebar.qml">C:/Users/33769/Documents/LegiForces/components/LegiRightSidebar.qml</file>
+    <file alias="components/LegiMainContent.qml">C:/Users/33769/Documents/LegiForces/components/LegiMainContent.qml</file>
+    <file alias="components/LegiSocialButton.qml">C:/Users/33769/Documents/LegiForces/components/LegiSocialButton.qml</file>
+    <file alias="components/LegiNewsSidebar.qml">C:/Users/33769/Documents/LegiForces/components/LegiNewsSidebar.qml</file>
+    <file alias="pages/Dashboard.qml">C:/Users/33769/Documents/LegiForces/pages/Dashboard.qml</file>
+    <file alias="pages/Login.qml">C:/Users/33769/Documents/LegiForces/pages/Login.qml</file>
+    <file alias="pages/CourtCases.qml">C:/Users/33769/Documents/LegiForces/pages/CourtCases.qml</file>
+    <file alias="pages/Users.qml">C:/Users/33769/Documents/LegiForces/pages/Users.qml</file>
+    <file alias="DataDyneCorpLogo.png">C:/Users/33769/Documents/LegiForces/DataDyneCorpLogo.png</file>
+  </qresource>
+</RCC>
+
