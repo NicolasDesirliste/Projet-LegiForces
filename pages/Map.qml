@@ -75,7 +75,7 @@ Item {
                 Image {
                     id: mapImage
                     anchors.centerIn: parent
-                    source: "qrc:/HTML/carte-france.svg"
+                    source: "qrc:/qt/qml/LegiForces/HTML/carte-france.svg"
                     sourceSize.width: 800
                     sourceSize.height: 800
                     fillMode: Image.PreserveAspectFit
