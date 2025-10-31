@@ -15,6 +15,9 @@ Item {
         "height": 567
     }
 
+    // Département actuellement survolé
+    property var hoveredDepartment: null
+
     // Charger les données au démarrage
     Component.onCompleted: {
         loadDepartmentData()
@@ -156,7 +159,88 @@ Item {
             }
 
             onPositionChanged: function(mouse) {
-                cursorShape = Qt.PointingHandCursor
+                if (departmentData.length === 0) {
+                    return
+                }
+
+                // Calculer les dimensions réelles de l'image affichée
+                var imageAspect = mapImage.sourceSize.width / mapImage.sourceSize.height
+                var containerAspect = mapImage.width / mapImage.height
+
+                var displayWidth, displayHeight, offsetX, offsetY
+
+                if (containerAspect > imageAspect) {
+                    displayHeight = mapImage.height
+                    displayWidth = displayHeight * imageAspect
+                    offsetX = (mapImage.width - displayWidth) / 2
+                    offsetY = 0
+                } else {
+                    displayWidth = mapImage.width
+                    displayHeight = displayWidth / imageAspect
+                    offsetX = 0
+                    offsetY = (mapImage.height - displayHeight) / 2
+                }
+
+                // Coordonnées relatives dans l'image réelle
+                var imageX = mouse.x - offsetX
+                var imageY = mouse.y - offsetY
+
+                // Vérifier que la souris est bien sur l'image
+                if (imageX < 0 || imageX > displayWidth || imageY < 0 || imageY > displayHeight) {
+                    hoveredDepartment = null
+                    hoverTooltip.visible = false
+                    return
+                }
+
+                // Convertir en coordonnées SVG viewBox
+                var svgCoords = Detector.mouseToSvgCoordinates(
+                    imageX, imageY, displayWidth, displayHeight, viewBox
+                )
+
+                // Trouver le département sous la souris
+                var department = Detector.findDepartmentAtPoint(
+                    svgCoords.x, svgCoords.y, departmentData
+                )
+
+                if (department) {
+                    hoveredDepartment = department
+                    hoverTooltip.x = mouse.x + 15
+                    hoverTooltip.y = mouse.y + 15
+                    hoverTooltip.visible = true
+                    cursorShape = Qt.PointingHandCursor
+                } else {
+                    hoveredDepartment = null
+                    hoverTooltip.visible = false
+                    cursorShape = Qt.ArrowCursor
+                }
+            }
+
+            onExited: {
+                hoveredDepartment = null
+                hoverTooltip.visible = false
+            }
+        }
+
+        // Tooltip au survol (simulation de l'effet hover du SVG)
+        Rectangle {
+            id: hoverTooltip
+            visible: false
+            width: tooltipText.width + 20
+            height: tooltipText.height + 12
+            color: "#2d2d2d"
+            border.color: "#86eee0"
+            border.width: 2
+            radius: 6
+            z: 1000
+            opacity: 0.95
+
+            Text {
+                id: tooltipText
+                anchors.centerIn: parent
+                text: hoveredDepartment ? (hoveredDepartment.number + " - " + hoveredDepartment.name) : ""
+                color: "#86eee0"
+                font.pixelSize: 13
+                font.bold: true
             }
         }
     }
