@@ -114,22 +114,22 @@ Item {
                     return
                 }
 
-                // Calculer les dimensions réelles de l'image affichée (avec PreserveAspectFit)
-                var imageAspect = mapImage.sourceSize.width / mapImage.sourceSize.height
+                // Utiliser les dimensions du viewBox plutôt que sourceSize
+                var viewBoxAspect = viewBox.width / viewBox.height
                 var containerAspect = mapImage.width / mapImage.height
 
                 var displayWidth, displayHeight, offsetX, offsetY
 
-                if (containerAspect > imageAspect) {
+                if (containerAspect > viewBoxAspect) {
                     // L'image est limitée par la hauteur
                     displayHeight = mapImage.height
-                    displayWidth = displayHeight * imageAspect
+                    displayWidth = displayHeight * viewBoxAspect
                     offsetX = (mapImage.width - displayWidth) / 2
                     offsetY = 0
                 } else {
                     // L'image est limitée par la largeur
                     displayWidth = mapImage.width
-                    displayHeight = displayWidth / imageAspect
+                    displayHeight = displayWidth / viewBoxAspect
                     offsetX = 0
                     offsetY = (mapImage.height - displayHeight) / 2
                 }
@@ -137,6 +137,12 @@ Item {
                 // Coordonnées relatives dans l'image réelle
                 var imageX = mouse.x - offsetX
                 var imageY = mouse.y - offsetY
+
+                // Vérifier que le clic est dans la zone de l'image
+                if (imageX < 0 || imageX > displayWidth || imageY < 0 || imageY > displayHeight) {
+                    console.log("Clic en dehors de l'image")
+                    return
+                }
 
                 // Convertir en coordonnées SVG viewBox
                 var svgCoords = Detector.mouseToSvgCoordinates(
@@ -163,20 +169,20 @@ Item {
                     return
                 }
 
-                // Calculer les dimensions réelles de l'image affichée
-                var imageAspect = mapImage.sourceSize.width / mapImage.sourceSize.height
+                // Utiliser les dimensions du viewBox plutôt que sourceSize
+                var viewBoxAspect = viewBox.width / viewBox.height
                 var containerAspect = mapImage.width / mapImage.height
 
                 var displayWidth, displayHeight, offsetX, offsetY
 
-                if (containerAspect > imageAspect) {
+                if (containerAspect > viewBoxAspect) {
                     displayHeight = mapImage.height
-                    displayWidth = displayHeight * imageAspect
+                    displayWidth = displayHeight * viewBoxAspect
                     offsetX = (mapImage.width - displayWidth) / 2
                     offsetY = 0
                 } else {
                     displayWidth = mapImage.width
-                    displayHeight = displayWidth / imageAspect
+                    displayHeight = displayWidth / viewBoxAspect
                     offsetX = 0
                     offsetY = (mapImage.height - displayHeight) / 2
                 }
@@ -189,6 +195,7 @@ Item {
                 if (imageX < 0 || imageX > displayWidth || imageY < 0 || imageY > displayHeight) {
                     hoveredDepartment = null
                     hoverTooltip.visible = false
+                    cursorShape = Qt.ArrowCursor
                     return
                 }
 
