@@ -34,6 +34,7 @@ qt_add_qml_module(appLegiForces
     RESOURCES
         DataDyneCorpLogo.png
         HTML/carte-france.svg
+        js/DepartmentDetector.js
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
