@@ -4,7 +4,7 @@ project(LegiForces VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick WebEngineQuick)
+find_package(Qt6 REQUIRED COMPONENTS Quick Svg)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
@@ -33,7 +33,7 @@ qt_add_qml_module(appLegiForces
         pages/Map.qml
     RESOURCES
         DataDyneCorpLogo.png
-        HTML/carte-france-metropolitaine-svg.html
+        HTML/carte-france.svg
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -48,7 +48,7 @@ set_target_properties(appLegiForces PROPERTIES
 )
 
 target_link_libraries(appLegiForces
-    PRIVATE Qt6::Quick Qt6::WebEngineQuick
+    PRIVATE Qt6::Quick Qt6::Svg
 )
 
 include(GNUInstallDirs)
