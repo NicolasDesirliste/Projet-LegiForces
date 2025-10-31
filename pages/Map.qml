@@ -1,11 +1,12 @@
 import QtQuick
 import QtQuick.Controls
 import "../js/DepartmentDetector.js" as Detector
+import "../js/DepartmentData.js" as DeptData
 
 Item {
     id: mapPage
 
-    // Données des départements (chargées depuis le SVG)
+    // Données des départements (chargées depuis le fichier statique)
     property var departmentData: []
     property var viewBox: {
         "x": 105,
@@ -14,53 +15,33 @@ Item {
         "height": 567
     }
 
-    // Charger les données du SVG au démarrage
+    // Charger les données au démarrage
     Component.onCompleted: {
-        loadSvgData()
+        loadDepartmentData()
     }
 
-    // Fonction pour charger et parser le SVG
-    function loadSvgData() {
-        var xhr = new XMLHttpRequest()
-        xhr.open("GET", "qrc:/qt/qml/LegiForces/HTML/carte-france.svg")
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    parseSvgData(xhr.responseText)
-                } else {
-                    console.error("Erreur de chargement du SVG:", xhr.status)
-                }
-            }
-        }
-        xhr.send()
-    }
+    // Fonction pour charger les données depuis le fichier statique
+    function loadDepartmentData() {
+        var departments = DeptData.getDepartments()
+        var parsedDepartments = []
 
-    // Parser le SVG pour extraire les données des départements
-    function parseSvgData(svgContent) {
-        var parser = new DOMParser()
-        var pathRegex = /<path[^>]*data-nom="([^"]*)"[^>]*data-numerodepartement="([^"]*)"[^>]*d="([^"]*)"[^>]*>/g
-        var matches
-        var departments = []
-
-        while ((matches = pathRegex.exec(svgContent)) !== null) {
-            var name = matches[1]
-            var number = matches[2]
-            var pathData = matches[3]
+        for (var i = 0; i < departments.length; i++) {
+            var dept = departments[i]
 
             // Parser le path pour obtenir les coordonnées du polygone
-            var polygon = Detector.parseSvgPath(pathData)
+            var polygon = Detector.parseSvgPath(dept.path)
 
             if (polygon.length > 0) {
-                departments.push({
-                    name: name,
-                    number: number,
+                parsedDepartments.push({
+                    name: dept.name,
+                    number: dept.number,
                     polygon: polygon
                 })
             }
         }
 
-        departmentData = departments
-        console.log("Départements chargés:", departments.length)
+        departmentData = parsedDepartments
+        console.log("Départements chargés:", parsedDepartments.length)
     }
 
     // Image SVG de la carte - centrée et adaptée
@@ -274,27 +255,28 @@ Item {
                 }
 
                 // Bouton fermer
-                Button {
+                Rectangle {
                     width: parent.width
                     height: 40
-                    text: "Fermer"
+                    color: mouseArea.containsMouse ? "#37afe5" : "#2a2a2a"
+                    border.color: "#37afe5"
+                    border.width: 1
+                    radius: 6
 
-                    background: Rectangle {
-                        color: parent.hovered ? "#37afe5" : "#2a2a2a"
-                        border.color: "#37afe5"
-                        border.width: 1
-                        radius: 6
-                    }
-
-                    contentItem: Text {
-                        text: parent.text
+                    Text {
+                        anchors.centerIn: parent
+                        text: "Fermer"
                         color: "#ffffff"
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
                         font.pixelSize: 14
                     }
 
-                    onClicked: departmentPopup.close()
+                    MouseArea {
+                        id: mouseArea
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: departmentPopup.close()
+                    }
                 }
             }
         }
