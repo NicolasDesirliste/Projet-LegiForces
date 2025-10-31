@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 163,
+                        "durationMicroseconds": 400,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 17
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 19,
-                        "durationMicroseconds": 134,
+                        "durationMicroseconds": 273,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 23
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 37,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 134,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 26
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 19,
-                        "durationMicroseconds": 780,
+                        "durationMicroseconds": 514,
                         "errorMessage": "",
                         "functionName": "text",
                         "line": 31
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 37,
-                        "durationMicroseconds": 87,
+                        "durationMicroseconds": 125,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 34
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 37,
-                        "durationMicroseconds": 109,
+                        "durationMicroseconds": 210,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
                         "line": 40
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 91,
+                        "durationMicroseconds": 191,
                         "errorMessage": "Cannot access value for name index",
                         "functionName": "color",
                         "line": 48

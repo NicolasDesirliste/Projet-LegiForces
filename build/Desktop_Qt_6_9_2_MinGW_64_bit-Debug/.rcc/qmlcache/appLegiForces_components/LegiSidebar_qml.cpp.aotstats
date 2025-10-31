@@ -6,7 +6,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 432,
+                        "durationMicroseconds": 308,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 15
@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 26,
-                        "durationMicroseconds": 225,
+                        "durationMicroseconds": 157,
                         "errorMessage": "",
                         "functionName": "weight",
                         "line": 25
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 310,
+                        "durationMicroseconds": 240,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 26
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 20,
-                        "durationMicroseconds": 3829,
+                        "durationMicroseconds": 2117,
                         "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
                         "functionName": "model",
                         "line": 31
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 24,
-                        "durationMicroseconds": 365,
+                        "durationMicroseconds": 184,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 50
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 24,
-                        "durationMicroseconds": 583,
+                        "durationMicroseconds": 283,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 52
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 43,
-                        "durationMicroseconds": 209,
+                        "durationMicroseconds": 91,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
                         "line": 55
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 27,
-                        "durationMicroseconds": 788,
+                        "durationMicroseconds": 706,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
                         "line": 62
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 28,
-                        "durationMicroseconds": 495,
+                        "durationMicroseconds": 296,
                         "errorMessage": "",
                         "functionName": "color",
                         "line": 63
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 39,
-                        "durationMicroseconds": 133,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 64
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 32,
-                        "durationMicroseconds": 598,
+                        "durationMicroseconds": 313,
                         "errorMessage": "Cannot access value for name sidebar",
                         "functionName": "onClicked",
                         "line": 77
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 35,
-                        "durationMicroseconds": 137,
+                        "durationMicroseconds": 68,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 74
