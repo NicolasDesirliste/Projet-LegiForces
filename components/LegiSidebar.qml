@@ -35,7 +35,7 @@ Rectangle {
                 { title: "Documents", pageId: "documents" },
                 { title: "Calendrier des audiences", pageId: "calendar" },
                 { title: "Messagerie Interne", pageId: "documents" },
-                { title: "Place Holder", pageId: "calendar" },
+                { title: "🗺️ Carte de France", pageId: "map" },
                 { title: "Place Holder", pageId: "documents" },
                 { title: "Place Holder", pageId: "calendar" },
                 { title: "Place Holder", pageId: "documents" },

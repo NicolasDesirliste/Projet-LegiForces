@@ -225,6 +225,10 @@ Rectangle {
                 componentName = "Users.qml"
                 messageText.text = "Administration des utilisateurs"
                 break
+            case "map":
+                componentName = "Map.qml"
+                messageText.text = "🗺️ Carte Interactive de France - Recherche par département"
+                break
             case "documents":
                 componentName = "Dashboard.qml" // Fallback pour l'instant
                 messageText.text = "Gestion documentaire"

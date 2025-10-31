@@ -30,8 +30,10 @@ qt_add_qml_module(appLegiForces
         pages/Login.qml
         pages/CourtCases.qml
         pages/Users.qml
+        pages/Map.qml
     RESOURCES
         DataDyneCorpLogo.png
+        HTML/carte-france-metropolitaine-svg.html
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
