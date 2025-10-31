@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 16,
-                        "durationMicroseconds": 614,
+                        "durationMicroseconds": 297,
                         "errorMessage": "Cannot access value for name control",
                         "functionName": "color",
                         "line": 18
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 15,
-                        "durationMicroseconds": 71,
+                        "durationMicroseconds": 39,
                         "errorMessage": "Cannot access value for name control",
                         "functionName": "text",
                         "line": 31
@@ -30,7 +30,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 16,
-                        "durationMicroseconds": 181,
+                        "durationMicroseconds": 66,
                         "errorMessage": "Cannot access value for name control",
                         "functionName": "color",
                         "line": 34
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 30,
-                        "durationMicroseconds": 580,
+                        "durationMicroseconds": 390,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "horizontalAlignment",
                         "line": 35
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 28,
-                        "durationMicroseconds": 421,
+                        "durationMicroseconds": 234,
                         "errorMessage": "Cannot access value for name Text",
                         "functionName": "verticalAlignment",
                         "line": 36

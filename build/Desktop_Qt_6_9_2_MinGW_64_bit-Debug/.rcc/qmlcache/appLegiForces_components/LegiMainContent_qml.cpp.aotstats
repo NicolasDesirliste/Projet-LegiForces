@@ -14,7 +14,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 5,
-                        "durationMicroseconds": 351,
+                        "durationMicroseconds": 245,
                         "errorMessage": "Cannot retrieve a non-object type by ID: stackView",
                         "functionName": "goBack",
                         "line": 264
@@ -22,7 +22,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 5,
-                        "durationMicroseconds": 175,
+                        "durationMicroseconds": 145,
                         "errorMessage": "Cannot retrieve a non-object type by ID: stackView",
                         "functionName": "goHome",
                         "line": 272
@@ -38,7 +38,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 22,
-                        "durationMicroseconds": 289,
+                        "durationMicroseconds": 222,
                         "errorMessage": "",
                         "functionName": "orientation",
                         "line": 9
@@ -46,7 +46,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 18,
-                        "durationMicroseconds": 2471,
+                        "durationMicroseconds": 2003,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "onPaint",
                         "line": 19
@@ -54,7 +54,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 90,
+                        "durationMicroseconds": 79,
                         "errorMessage": "",
                         "functionName": "fill",
                         "line": 17
@@ -62,7 +62,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 26,
-                        "durationMicroseconds": 106,
+                        "durationMicroseconds": 309,
                         "errorMessage": "",
                         "functionName": "orientation",
                         "line": 48
@@ -70,7 +70,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 84,
+                        "durationMicroseconds": 52,
                         "errorMessage": "Cannot access value for name height",
                         "functionName": "y",
                         "line": 56
@@ -78,7 +78,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 22,
-                        "durationMicroseconds": 523,
+                        "durationMicroseconds": 485,
                         "errorMessage": "",
                         "functionName": "onTriggered",
                         "line": 66
@@ -86,7 +86,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 21,
-                        "durationMicroseconds": 319,
+                        "durationMicroseconds": 149,
                         "errorMessage": "",
                         "functionName": "onFinished",
                         "line": 89
@@ -94,7 +94,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 21,
-                        "durationMicroseconds": 103,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
                         "functionName": "target",
                         "line": 78
@@ -102,7 +102,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 17,
-                        "durationMicroseconds": 242,
+                        "durationMicroseconds": 206,
                         "errorMessage": "",
                         "functionName": "to",
                         "line": 80
@@ -110,7 +110,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 21,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 72,
                         "errorMessage": "",
                         "functionName": "target",
                         "line": 84
@@ -118,7 +118,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 17,
-                        "durationMicroseconds": 217,
+                        "durationMicroseconds": 159,
                         "errorMessage": "",
                         "functionName": "to",
                         "line": 86
@@ -126,7 +126,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 22,
-                        "durationMicroseconds": 148,
+                        "durationMicroseconds": 102,
                         "errorMessage": "",
                         "functionName": "top",
                         "line": 100
@@ -134,7 +134,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 23,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "left",
                         "line": 101
@@ -142,7 +142,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 24,
-                        "durationMicroseconds": 201,
+                        "durationMicroseconds": 80,
                         "errorMessage": "",
                         "functionName": "right",
                         "line": 102
@@ -150,7 +150,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 20,
-                        "durationMicroseconds": 155,
+                        "durationMicroseconds": 130,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 113
@@ -158,7 +158,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 29,
-                        "durationMicroseconds": 136,
+                        "durationMicroseconds": 87,
                         "errorMessage": "",
                         "functionName": "bottom",
                         "line": 112
@@ -166,7 +166,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 34,
-                        "durationMicroseconds": 143,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "horizontalAlignment",
                         "line": 125
@@ -174,7 +174,7 @@
                     {
                         "codegenSuccessful": true,
                         "column": 31,
-                        "durationMicroseconds": 70,
+                        "durationMicroseconds": 62,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 124
@@ -222,7 +222,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 64,
+                        "durationMicroseconds": 37,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "from",
                         "line": 143
@@ -230,7 +230,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 30,
-                        "durationMicroseconds": 145,
+                        "durationMicroseconds": 105,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
                         "line": 146
@@ -238,7 +238,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 21,
-                        "durationMicroseconds": 29,
+                        "durationMicroseconds": 25,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "to",
                         "line": 160
@@ -246,7 +246,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 30,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 91,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
                         "line": 162
@@ -254,7 +254,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 23,
-                        "durationMicroseconds": 28,
+                        "durationMicroseconds": 26,
                         "errorMessage": "Cannot access value for name stackView",
                         "functionName": "from",
                         "line": 175
@@ -262,7 +262,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 30,
-                        "durationMicroseconds": 115,
+                        "durationMicroseconds": 91,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
                         "line": 178
@@ -278,7 +278,7 @@
                     {
                         "codegenSuccessful": false,
                         "column": 30,
-                        "durationMicroseconds": 79,
+                        "durationMicroseconds": 72,
                         "errorMessage": "Cannot access value for name Easing",
                         "functionName": "type",
                         "line": 194
